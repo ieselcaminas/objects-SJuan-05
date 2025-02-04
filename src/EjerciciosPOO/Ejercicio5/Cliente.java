@@ -6,6 +6,7 @@ public class Cliente {
     private int dni;
     private String nombre;
     private ArrayList<Prestec> prestecs;
+    private ArrayList<CuentaCorriente> cuentas;
 
     public Cliente(int dni, String nombre) {
         this.dni = dni;
@@ -28,8 +29,18 @@ public class Cliente {
     }
 
     public void añadirPrestamo(Prestec prestec) {
-
         this.prestecs.add(prestec);
+    }
+
+    public ArrayList<Prestec> getPrestecs() {
+        return prestecs;
+    }
+    public void setPrestecs(ArrayList<Prestec> prestecs) {
+        this.prestecs = prestecs;
+    }
+
+    public void añadirCuentas(CuentaCorriente cuentaCorriente) {
+        this.cuentas.add(cuentaCorriente);
     }
 
     @Override
