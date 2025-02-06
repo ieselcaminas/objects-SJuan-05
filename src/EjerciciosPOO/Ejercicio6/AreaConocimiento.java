@@ -21,9 +21,6 @@ public class AreaConocimiento {
     public ArrayList<ArrayList> getDepartamentos() {
         return departamentos;
     }
-    public void setDepartamentos(ArrayList<ArrayList> departamentos) {
-        this.departamentos = departamentos;
-    }
 
     public void añadirDepartamento(ArrayList departamento) {
         this.departamentos.add(departamento);

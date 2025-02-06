@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Facultad {
     private String nombre;
-    public ArrayList<Facultad> facultades;
+    public ArrayList<Catedra> catedras;
 
     public Facultad(String nombre) {
         this.nombre = nombre;
-        this.facultades = new ArrayList<Facultad>();
+        this.catedras = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -18,15 +18,12 @@ public class Facultad {
         this.nombre = nombre;
     }
 
-    public ArrayList<Facultad> getFacultades() {
-        return facultades;
-    }
-    public void setFacultades(ArrayList<Facultad> facultades) {
-        this.facultades = facultades;
+    public ArrayList<Catedra> getCatedras() {
+        return catedras;
     }
 
-    public void añadirFacultad(Facultad facultad) {
-        this.facultades.add(facultad);
+    public void añadirCatedras(Catedra facultad) {
+        this.catedras.add(facultad);
     }
 
     @Override

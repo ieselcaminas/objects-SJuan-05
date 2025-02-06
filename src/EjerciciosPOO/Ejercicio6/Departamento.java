@@ -10,7 +10,7 @@ public class Departamento {
     public Departamento(String nombre, AreaConocimiento areaConocimiento) {
         this.nombre = nombre;
         this.areaConocimiento = areaConocimiento;
-        this.profesores = new ArrayList();
+        this.profesores = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -29,9 +29,6 @@ public class Departamento {
 
     public ArrayList<Profesor> getProfesores() {
         return profesores;
-    }
-    public void setProfesores(ArrayList<Profesor> profesores) {
-        this.profesores = profesores;
     }
 
     public void añadirProfesor(Profesor profesor) {

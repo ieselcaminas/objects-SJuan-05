@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Profesor {
     private String nombre;
     private Departamento departamento;
-    private ArrayList<Catedra> catedras = new ArrayList<>();
+    private ArrayList<Catedra> catedras;
 
     public Profesor(String nombre, Departamento departamento) {
         this.nombre = nombre;
@@ -29,9 +29,6 @@ public class Profesor {
 
     public ArrayList<Catedra> getCatedras() {
         return catedras;
-    }
-    public void setCatedras(ArrayList<Catedra> catedras) {
-        this.catedras = catedras;
     }
 
     public void añadirCatedra(Catedra catedra) {

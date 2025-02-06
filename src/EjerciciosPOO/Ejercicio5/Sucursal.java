@@ -34,9 +34,6 @@ public class Sucursal {
     public ArrayList<Prestec> getPrestamo() {
         return prestamos;
     }
-    public void setPrestamo(ArrayList<Prestec> prestamos) {
-        this.prestamos = prestamos;
-    }
 
     public void añadirPrestamo(Prestec prestamo) {
         prestamos.add(prestamo);
@@ -44,9 +41,6 @@ public class Sucursal {
 
     public ArrayList<CuentaCorriente> getCuentas() {
         return cuentas;
-    }
-    public void setCuentas(ArrayList<CuentaCorriente> cuentas) {
-        this.cuentas = cuentas;
     }
 
     public void añadirCuenta(CuentaCorriente cuenta) {

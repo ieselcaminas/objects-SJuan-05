@@ -2,9 +2,9 @@ package EjerciciosPOO.Ejercicio5;
 
 public class Domiciliacion {
     private int num_d;
-    private int cuentaCorriente;
+    private CuentaCorriente cuentaCorriente;
 
-    public Domiciliacion(int num_d, int cuentaCorriente) {
+    public Domiciliacion(int num_d, CuentaCorriente cuentaCorriente) {
         this.num_d = num_d;
         this.cuentaCorriente = cuentaCorriente;
     }
@@ -16,10 +16,10 @@ public class Domiciliacion {
         this.num_d = num_d;
     }
 
-    public int getCuentaCorriente() {
+    public CuentaCorriente getCuentaCorriente() {
         return cuentaCorriente;
     }
-    public void setCuentaCorriente(int cuentaCorriente) {
+    public void setCuentaCorriente(CuentaCorriente cuentaCorriente) {
         this.cuentaCorriente = cuentaCorriente;
     }
 

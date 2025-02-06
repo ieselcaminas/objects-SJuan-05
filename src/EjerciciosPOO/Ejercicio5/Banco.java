@@ -27,9 +27,6 @@ public class Banco {
     public ArrayList<Sucursal> getSucursales() {
         return sucursales;
     }
-    public void setSucursales(ArrayList<Sucursal> sucursales) {
-        this.sucursales = sucursales;
-    }
 
     public void añadirSucursal(Sucursal sucursal) {
         this.sucursales.add(sucursal);

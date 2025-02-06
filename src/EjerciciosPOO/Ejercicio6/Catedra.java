@@ -12,7 +12,7 @@ public class Catedra {
         this.nombre = nombre;
         this.departamento = departamento;
         this.facultad = facultad;
-        this.profesores = profesores;
+        this.profesores = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -38,9 +38,6 @@ public class Catedra {
 
     public ArrayList<Profesor> getProfesores() {
         return profesores;
-    }
-    public void setProfesores(ArrayList<Profesor> profesores) {
-        this.profesores = profesores;
     }
 
     public void añadirProfesor(Profesor profesor) {

@@ -12,6 +12,7 @@ public class Cliente {
         this.dni = dni;
         this.nombre = nombre;
         this.prestecs = new ArrayList<>();
+        this.cuentas = new ArrayList<>();
     }
 
     public int getDni() {
@@ -28,15 +29,16 @@ public class Cliente {
         this.nombre = nombre;
     }
 
+    public ArrayList<Prestec> getPrestecs() {
+        return prestecs;
+    }
+
     public void añadirPrestamo(Prestec prestec) {
         this.prestecs.add(prestec);
     }
 
-    public ArrayList<Prestec> getPrestecs() {
-        return prestecs;
-    }
-    public void setPrestecs(ArrayList<Prestec> prestecs) {
-        this.prestecs = prestecs;
+    public ArrayList<CuentaCorriente> getCuentas() {
+        return cuentas;
     }
 
     public void añadirCuentas(CuentaCorriente cuentaCorriente) {
