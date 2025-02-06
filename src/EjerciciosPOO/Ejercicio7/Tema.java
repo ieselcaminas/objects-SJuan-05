@@ -29,9 +29,6 @@ public class Tema {
     public ArrayList<Libro> getLibros() {
         return libros;
     }
-    public void setLibros(ArrayList<Libro> libros) {
-        this.libros = libros;
-    }
 
     public void agregarLibro(Libro libro) {
         this.libros.add(libro);

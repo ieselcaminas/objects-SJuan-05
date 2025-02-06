@@ -3,10 +3,12 @@ package EjerciciosPOO.Ejercicio7;
 public class Ejemplar {
     private int n_reg;
     private Libro libro;
+    private Historico historico;
 
-    public Ejemplar(int n_reg, Libro libro) {
+    public Ejemplar(int n_reg, Libro libro, Historico historico) {
         this.n_reg = n_reg;
         this.libro = libro;
+        this.historico = historico;
     }
 
     public int getN_reg() {
@@ -21,6 +23,13 @@ public class Ejemplar {
     }
     public void setLibro(Libro libro) {
         this.libro = libro;
+    }
+
+    public Historico getHistorico() {
+        return historico;
+    }
+    public void setHistorico(Historico historico) {
+        this.historico = historico;
     }
 
     @Override
