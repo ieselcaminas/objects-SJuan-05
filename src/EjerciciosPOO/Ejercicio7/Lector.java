@@ -34,6 +34,6 @@ public class Lector {
 
     @Override
     public String toString() {
-        return dni + " - " +nombre;
+        return dni + " - " + nombre;
     }
 }
