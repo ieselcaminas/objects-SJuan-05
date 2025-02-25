@@ -1,23 +1,16 @@
-package EjerciciosPOO.Cuenta;
+package org.example.Cuenta;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Cuenta c = new Cuenta("Aaron", 800);
+        Cuenta c2 = new Cuenta("Víctor", 1000);
+        c.ingresar(200);
+        c2.retirar(100);
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Ingrese una cantidad a la cuenta del banco, si ingresa un número negativo finalizará: ");
-        double ingresar = Cuenta.ingresarCantidad(sc);
-
-        System.out.println("Retira una cantidad de la cuenta del banco: ");
-        double total = Cuenta.retirarCantidad(ingresar, sc);
-
-        Cuenta c = new Cuenta("Víctor", 10);
-
-        Cuenta cuenta = new Cuenta("Aaron",total);
-
-        System.out.println(cuenta);
         System.out.println(c);
+        System.out.println(c2);
+
     }
 }

@@ -1,4 +1,5 @@
-package EjerciciosPOO.Autor;
+package org.example.Autor;
+
 public class Tema {
     private String nombre;
 
@@ -6,15 +7,15 @@ public class Tema {
         this.nombre = nombre;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
-    public void setNombre(String nombre){
+    public void setNombre(){
         this.nombre = nombre;
     }
 
     @Override
     public String toString() {
-        return "| Tema: " + nombre;
+        return "Tema{" + nombre + "}";
     }
 }

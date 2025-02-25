@@ -1,4 +1,4 @@
-package EjerciciosPOO.Cuenta;
+package org.example.Cuenta;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Cuenta {
     private String titular;
     private double cantidad;
 
-    public Cuenta(String titular, double cantidad){
+    public Cuenta(String titular, double cantidad) {
         this.titular = titular;
         this.cantidad = cantidad;
     }
@@ -16,48 +16,26 @@ public class Cuenta {
         this.cantidad = 0;
     }
 
-    public String getTitular(){
+    public String getTitular() {
         return titular;
     }
-    public void setTitular(String titular){
-        this.titular = titular;
-    }
 
-    public double getCantidad(){
+    public double getCantidad() {
         return cantidad;
     }
-    public void setCantidad(double cantidad){
-        this.cantidad = cantidad;
-    }
 
-    public static double ingresarCantidad(Scanner sc) {
-
-        double cantidadSumar = sc.nextDouble();
-
-        if (cantidadSumar > 0) {
-            return cantidadSumar;
+    public void ingresar(double ingreso){
+        if (ingreso > 0){
+            this.cantidad += ingreso;
         }
-
-        return 0;
     }
-
-    public static double retirarCantidad(double ingresar, Scanner sc) {
-
-        double total = 0;
-
-        double cantidadRestar = sc.nextDouble();
-
-        if ((ingresar - cantidadRestar) < 0){
-            total = 0;
-        } else {
-            total = ingresar - cantidadRestar;
+    public void retirar(double retirar){
+        if (this.cantidad - retirar > 0){
+            this.cantidad -= retirar;
         }
-
-        return total;
     }
-
     @Override
     public String toString() {
-        return "Cuenta { " + "Titular = " + titular + " | Cantidad = " + cantidad + " }";
+        return "Cuenta{" + titular + " - " + cantidad + "}";
     }
 }

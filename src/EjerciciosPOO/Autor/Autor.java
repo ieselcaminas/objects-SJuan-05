@@ -1,30 +1,30 @@
-package EjerciciosPOO.Autor;
-import java.util.Date;
+package org.example.Autor;
 
 public class Autor {
     private String nombre;
-    private int fechaNaciento;
+    private String fechaNacimiento;
 
-    public Autor(String nombre, int fechaNacimiento){
+    public Autor(String nombre, String fechaNacimiento) {
         this.nombre = nombre;
-        this.fechaNaciento = fechaNacimiento;
+        this.fechaNacimiento = fechaNacimiento;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
-    public void setNombre(String nombre){
+    public void setNombre(){
         this.nombre = nombre;
     }
 
-    public int getFechaNacimiento(){
-        return fechaNaciento;
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
     }
-    public void setFechaNacimiento(int fechaNacimiento){
-        this.fechaNaciento = fechaNacimiento;
+    public void setFechaNacimiento(){
+        this.fechaNacimiento = fechaNacimiento;
     }
 
-    public String toString(){
-        return "Nombre" + nombre + "| Fecha de Nacimiento: " + fechaNaciento + " | ";
+    @Override
+    public String toString() {
+        return "Autor{" + nombre + " - " + fechaNacimiento + "}";
     }
 }

@@ -1,50 +1,51 @@
-package EjerciciosPOO.Autor;
+package org.example.Autor;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Libro {
     private String titulo;
-    private Autor autor;
+    private String autor;
     private int paginas;
-    private Tema tema;
+    private List<Tema> temas;
 
-    public Libro(String titulo, Autor autor, int paginas, Tema tema) {
+    public Libro(String titulo, String autor, int paginas) {
         this.titulo = titulo;
         this.autor = autor;
         this.paginas = paginas;
-        this.tema = tema;
+        this.temas = new ArrayList<>();
     }
+
     public String getTitulo() {
         return titulo;
     }
-    public void setTitulo(String titulo) {
+    public void setTitulo(){
         this.titulo = titulo;
     }
 
-    public Autor getAutor() {
+    public String getAutor() {
         return autor;
     }
-    public void setAutor(Autor autor) {
+    public void setAutor(){
         this.autor = autor;
     }
 
     public int getPaginas() {
         return paginas;
     }
-    public void setPaginas(int paginas) {
+    public void setPaginas(){
         this.paginas = paginas;
     }
 
-    public Tema getTema() {
-        return tema;
+    public List<Tema> getTemas() {
+        return temas;
     }
-    public void setTema(Tema tema) {
-        this.tema = tema;
+    public void añadirTema(Tema tema){
+        this.temas.add(tema);
     }
 
     @Override
     public String toString() {
-        return "| Titulo: " + titulo + "| Autor: " + autor + "| Páginas: " + paginas + tema;
+        return "Libro{" + titulo + " - " + autor + " - " + paginas + "}";
     }
 }
-
